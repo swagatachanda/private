@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Jua&family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Shadows+Into+Light&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    height: 70px;
+    font-family: 'Dancing Script', cursive;
+    background-image: linear-gradient(#ff7b00, #ffea00);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-weight: bold;
+}
+.body-content{
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(/heart2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    margin-top: 20px;
+}
+.body-content > div {
+    width: 30%;
+}
+#photo{
+    border-radius: 600px;
+}
+.bday-msg{
+    font-family: 'Jua', sans-serif;
+    font-size: 25px;
+    color: #5a189a;
+    /* background-image: url(/images/balloons.png); */
+}
+.sjk{
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    align-items: center;
+    background-image: linear-gradient(white,#ffd6ff, white);
+}
+.pictures{
+    display: flex;
+    align-items: center;
+}
+.pictures > div{
+    padding-left: 20px;
+}
+#raisa{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#sjk{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+.sjk-msg{
+    background-image: url(/cloud.png);
+    background-size: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 30px;
+    height: 400px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 25px;
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: bold;
+    color: #a4243b;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    /* margin-bottom: 500px; */
+    height: fit-content;
+}
+.btn{
+    border: 3px solid black;
+    border-radius: 10px;
+    display: inline;
+    padding: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    background-color: #aab87d;
+    color: white;
+}
+.button:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+}
+.footer{
+    height: 40px;
+    background-color:  salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+@media screen and (max-width: 494px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .navbar{
+        height: fit-content;
+        text-align: center;
+    }
+    /* img{
+        height: fit-content;
+    } */
+}
+@media screen and (max-width: 1024px) {
+    .navbar{
+        width: 100%;
+        margin-right: 0;
+    }
+    .body-content{
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 20px;
+        background-image: url(/balloons.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .container, .content{
+        min-height: 100%;
+        margin: 0;
+    }
+    .body-content>div{
+        width: 70%;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+    .pictures{
+        flex-direction: column;
+    }
+    .sjk{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .sjk-msg{
+        width: 100%;
+    }
+    .button{
+        margin-top: 20px;
+        min-height: calc(100% - 40px);
+    }
+    .footer{
+        background-image: linear-gradient(white, salmon, white);
+
+    }
+}

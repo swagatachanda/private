@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Jua&family=Schoolbell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Shadows+Into+Light&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.animated,
+.img-svg {
+	width: 30vw;
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+.success {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    /* height: 50%; */
+    height: 600px;
+    height: fit-content;
+}
+.success-thankyou {
+	font-family: "Caveat", cursive;
+	font-size: 5rem;
+}
+.success > div{
+    padding-left: 20px;
+}
+.raisu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: fit-content;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Handlee', cursive;
+    font-size: 40px;
+    color: teal;
+}
+i:hover{
+    color: red;
+    cursor: pointer;
+}
+.footer{
+    height: 40px;
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+@media screen and (max-width: 1024px) {
+    .animated,
+	.img-svg {
+		width: 70vw;
+	}
+	.success {
+		flex-direction: column;
+	}
+	.success-thankyou {
+		font-size: 3.5rem;
+	}
+    .footer{
+        background-image: linear-gradient(white, salmon, white);
+    }
+}

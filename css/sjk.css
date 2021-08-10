@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(#9ef01a, white);
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent;  
+}
+.body-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url("/balloons2.png");
+    background-repeat: repeat-x;
+    background-size: 420px;
+}
+/* .body-content > div{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+} */
+.msg{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 60px;
+    color: #c9184a;
+}
+.text{
+    font-size: 40px;
+    text-align: center;
+    height: 70px;
+    margin-top: 100px;
+    font-family: 'Caveat', cursive;
+}
+input{
+    height: 30px;
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.sjk-msg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inp{
+    width: 40%;
+}
+.footer{
+    height: 40px;
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+}
+.ok{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    padding-left: 20px;
+/* text-align: center; */
+}
+.button:hover{
+    cursor: pointer;
+    color: red;
+}
+.print{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 20px;
+    color: #800f2f;
+}
+.pict1{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    background-image: url("/heart2.png");
+    background-position: center;
+    background-size: 40px;
+}
+#pict{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.bttn{
+    /* margin: 20px; */
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    background-image: linear-gradient(white, #d9ed92);
+}
+.btn2{
+    display: inline;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    background-color: cornflowerblue;
+    color: white;
+}
+.btn2:hover{
+    color: #ffccd5;
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+    .body-content{
+        flex-direction: column;
+        background-repeat: repeat-y;
+        background-position: center;
+    }
+    .body-content > div{
+        padding-top: 20px;
+    }
+    .msg{
+        height: fit-content;
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    #pic{
+        background-image: linear-gradient(#9ef01a, white);
+    }
+    .text{
+        margin-top: 60px;
+        height: fit-content;
+    }
+    .input{
+        height: fit-content;
+    }
+    .sjk-msg{
+        flex-direction: column-reverse;
+    }
+    .footer{
+        background-image: linear-gradient(white, salmon, white);
+    }
+}
